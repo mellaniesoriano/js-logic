@@ -165,7 +165,14 @@ console.log(notEqual("2", "8"));
  * Console.log your result.
 */ 
 
-
+function spareChange(money){
+  if(money > 100){
+    return money > 100;
+  }else{
+    return "false";
+  }
+}
+console.log(spareChange(2));
 
 /*
  * #9
