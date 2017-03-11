@@ -190,9 +190,9 @@ console.log(spareChange(2));
 
 function dirty30(one, two, three){
   if(one + two + three > 30){
-    return "true";
+    return one + two + three > 30;
   }else{
-    return "false"
+    return "false";
   }
 }
 console.log(dirty30(8, 90, 10));
@@ -209,6 +209,14 @@ console.log(dirty30(8, 90, 10));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+  if(num % 2 == 0){
+    return num % 2 == 0;
+  }else{
+    return "false";
+  }
+}
+console.log(evenStevens(12));
 
 /*
  * #11
