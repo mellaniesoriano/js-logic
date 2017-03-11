@@ -34,7 +34,7 @@ function canVote(age){
     return age >= 18;
   }
 }
-console.log(canVote(19));
+console.log(canVote(21));
 
 /*
  * #2
@@ -73,7 +73,7 @@ function isGreaterThan(first, second){
     return first >= second;
   }
 }
-console.log(isGreaterThan(200, 1));
+console.log(isGreaterThan(100, 1));
 
 /*
  * #4
@@ -87,7 +87,12 @@ console.log(isGreaterThan(200, 1));
  * Console.log your result.
 */
 
-
+function mustBeTrue(boo){
+  if(boo >= 3){
+    return boo >= 3;
+  }
+}
+console.log(mustBeTrue(6));
 
 /*
  * #5
