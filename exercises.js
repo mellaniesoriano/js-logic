@@ -146,6 +146,12 @@ console.log(isEqual(1, 1));
  * Console.log your result.
 */
 
+function notEqual(first, second){
+  if(first != second){
+    return "Cause it's like you're my mirror";
+  }
+}
+console.log(notEqual("2", "8"));
 
 /*
  * #8
@@ -158,6 +164,7 @@ console.log(isEqual(1, 1));
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
+
 
 
 /*
