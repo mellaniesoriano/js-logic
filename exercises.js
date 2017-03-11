@@ -29,6 +29,12 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 
+function canVote(age){
+  if(age >= 18){
+    return age >= 18;
+  }
+}
+console.log(canVote(19));
 
 /*
  * #2
@@ -42,6 +48,12 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function login(password){
+  if("test1234"){
+    return "Login Success!";
+  }
+}
+console.log(login("test1234"));
 
 /*
  * #3
@@ -56,6 +68,12 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
+  if(first >= second){
+    return first >= second;
+  }
+}
+console.log(isGreaterThan(200, 1));
 
 /*
  * #4
@@ -68,6 +86,7 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the value passed into the function is "true".
  * Console.log your result.
 */
+
 
 
 /*
