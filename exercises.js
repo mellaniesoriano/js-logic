@@ -106,6 +106,12 @@ console.log(mustBeTrue(6));
  * Console.log your result.
 */
 
+function bigBird(word){
+  if(word.length = 3){
+    return "Word to Big Bird!";
+  }
+}
+console.log(bigBird("wow"));
 
 /*
  * #6
@@ -120,6 +126,12 @@ console.log(mustBeTrue(6));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+  if(first = second){
+    return "I don't know who are anymore.";
+  }
+}
+console.log(isEqual(1, 1));
 
 /*
  * #7
