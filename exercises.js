@@ -260,7 +260,7 @@ function graduation(credits, thesis){
     return "See you in summer school.";
   }
 }
-console.log(graduation(9, 6>9));
+console.log(graduation(9, 6 > 9));
 
 /*
  * #13
@@ -274,6 +274,14 @@ console.log(graduation(9, 6>9));
  * Console.log your result.
 */ 
 
+function moneyTrain(speed){
+  if(speed < 50){
+    return "You are riding an Amtrak."
+  }else if (speed >= 100) {
+    return "Now you ballin' in the Shinkansen!"
+  }
+}
+console.log(moneyTrain(500));
 
 /*
  * #14
@@ -289,6 +297,15 @@ console.log(graduation(9, 6>9));
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 80;
+var doughnutPrice = 4;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+  return budget - doughnutPrice;
+}
+console.log(buyDoughnut());
+console.log(budget, doughnutBought);
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -318,12 +335,20 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
 
 
+for (var i = 1; i < 6; i++){
+  console.log("Player: " + i);
+}
+
+
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for(var i = 0; i < myFavFoods; i++){
+  console.log(myFavFoods[i]);
+}
 
 /*
  * #17
