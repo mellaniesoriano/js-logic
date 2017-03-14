@@ -31,7 +31,7 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
 
 function canVote(age){
   if(age >= 18){
-    return age >= 18;
+    return true;
   }
 }
 console.log(canVote(21));
@@ -70,7 +70,7 @@ console.log(login("test1234"));
 
 function isGreaterThan(first, second){
   if(first >= second){
-    return first >= second;
+    return true;
   }
 }
 console.log(isGreaterThan(100, 1));
@@ -167,9 +167,9 @@ console.log(notEqual("2", "8"));
 
 function spareChange(money){
   if(money > 100){
-    return money > 100;
+    return true;
   }else{
-    return "false";
+    return false;
   }
 }
 console.log(spareChange(2));
@@ -190,9 +190,9 @@ console.log(spareChange(2));
 
 function dirty30(one, two, three){
   if(one + two + three > 30){
-    return one + two + three > 30;
+    return true;
   }else{
-    return "false";
+    return false;
   }
 }
 console.log(dirty30(8, 90, 10));
@@ -211,9 +211,9 @@ console.log(dirty30(8, 90, 10));
 
 function evenStevens(num){
   if(num % 2 == 0){
-    return num % 2 == 0;
+    return true;
   }else{
-    return "false";
+    return false;
   }
 }
 console.log(evenStevens(12));
@@ -276,8 +276,10 @@ console.log(graduation(9, 6 > 9));
 
 function moneyTrain(speed){
   if(speed < 50){
+    return "You are riding Honolulu's Rail."
+  }else if (speed < 100) {
     return "You are riding an Amtrak."
-  }else if (speed >= 100) {
+  }else{
     return "Now you ballin' in the Shinkansen!"
   }
 }
@@ -302,9 +304,16 @@ var doughnutPrice = 4;
 var doughnutBought = 0;
 
 function buyDoughnut(){
-  return budget - doughnutPrice;
+  if(budget >= doughnutPrice){
+    budget -= doughnutPrice
+    doughnutBought++;
+  }
 }
-console.log(buyDoughnut());
+
+console.log(budget, doughnutBought);
+buyDoughnut();
+console.log(budget, doughnutBought);
+buyDoughnut();
 console.log(budget, doughnutBought);
 
 /*
@@ -346,7 +355,7 @@ for (var i = 1; i < 6; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
-for(var i = 0; i < myFavFoods; i++){
+for (var i = 0; i < myFavFoods.length; i++){
   console.log(myFavFoods[i]);
 }
 
@@ -365,6 +374,17 @@ for(var i = 0; i < myFavFoods; i++){
  * Console.log your result.
 */
 
+var numArray = [17, 19, 21, 23, 25];
+var total = 0;
+
+function sumItUp(arr){
+  for (var i = 0; i < arr.length; i++){
+    total += arr[i];
+  }
+  return total;
+}
+console.log(sumItUp(numArray));
+
 
 /*
  * #18
@@ -382,6 +402,21 @@ for(var i = 0; i < myFavFoods; i++){
   var east = [];
   var west = [];
 
+  function allStars(ballers){
+    for(var i = 0; i < ballers.length; i ++){
+      if (i % 2 === 0) {
+        east.push(ballers[i]);
+        }else{
+          west.push(ballers[i]);
+        }
+      }
+}
+
+allStars(players);
+console.log(east);
+console.log(west);
+
+
 /*
  * #19
  * Function - subways
@@ -396,6 +431,15 @@ for(var i = 0; i < myFavFoods; i++){
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+function subways(special){
+  for(var i = 0; i < special.length; i++){
+    if(i % 2 !== 0){
+      special[i] = "Classic Tuna";
+    }
+  }
+  console.log(special);
+}
+subways(subOftheDay);
 
 /*
 Final Boss
@@ -411,11 +455,14 @@ Final Boss
 
   var phrase = "An apple a day keeps Alice feeling awesome!"
   
+function removeLetter(str){
+  for(var i = 0; i < phrase.length; i++){
+    str[i] = str.replace('a', ' ');
+  }
+  console.log();
+}
 
-
-
-
-
+removeLetter(phrase);
 
 
 
