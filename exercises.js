@@ -459,14 +459,14 @@ Final Boss
   function removeLetter(str){
     for(var i = 0; i<str.length; i++){
       console.log(str[i]);
-      if(str[i] !== 'a' && str[i] !== "A"){
+      if(str[i] !== "a" && str[i] !== "A"){
         newArr.push(str[i]);
       }
     }
-    console.log(newArr);
-    return newArr;
   } 
+
 removeLetter(phrase);
+console.log(newArr);
 
 
 
