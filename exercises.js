@@ -433,13 +433,13 @@ console.log(west);
 
 function subways(special){
   for(var i = 0; i < special.length; i++){
-    if(i % 2 !== 0){
+    if(i % 2 !== 0){ // another way to find odd i % 2 === 1
       special[i] = "Classic Tuna";
     }
   }
-  console.log(special);
 }
 subways(subOftheDay);
+console.log(subOftheDay);
 
 /*
 Final Boss
@@ -455,16 +455,19 @@ Final Boss
 
   var phrase = "An apple a day keeps Alice feeling awesome!"
   
-function removeLetter(str){
-  for(var i = 0; i < phrase.length; i++){
-    str[i] = str.replace('a', ' ');
-  }
-  console.log();
-}
-
+  
+  function removeLetter(str){
+    var newArr = [];
+    for(var i = 0; i<str.length; i++){
+      console.log(str[i]);
+      if(str[i] !== 'a' && str[i] !== "A"){
+        newArr.push(str[i]);
+      }
+    }
+    console.log(newArr);
+    return newArr;
+  } 
 removeLetter(phrase);
-
-
 
 
 
